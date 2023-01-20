@@ -9,7 +9,7 @@ class Product(models.Model):
     photo = models.ImageField(upload_to='images/', **NULLABLE)
     category = models.ForeignKey('catalog.Category', on_delete=models.CASCADE)
     price = models.FloatField(verbose_name='Цена')
-    date_org = models.DateField(null=True)
+    date_org = models.DateField(null=True, auto_now=True, verbose_name='Дата создания')
     date_fill = models.DateField(null=True)
 
     class Meta:
