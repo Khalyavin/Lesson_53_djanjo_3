@@ -10,5 +10,6 @@ cache/
 
 # Dictionaries / data files
 *.json
+!fixtures_catalog.json
 *.csv
 *.zip
